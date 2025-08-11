@@ -1,8 +1,8 @@
 from os import execl, path, system
 from sys import executable, argv
 
-if path.exists("aviso_read?") == False:
-    with open('aviso_read?', 'w+') as f:
+if path.exists("aviso_read") == False:
+    with open('aviso_read', 'w+') as f:
         system('cat aviso.txt')
         input()
         f.write('true')
